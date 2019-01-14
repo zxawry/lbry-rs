@@ -1,0 +1,10 @@
+[package]
+name = "lbry-rs"
+version = "0.0.1"
+authors = ["zxawry <zxawry@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+jsonrpc-client-core = "0.5.0"
+jsonrpc-client-http = "0.5.0"
+serde_json = "1.0.34"
