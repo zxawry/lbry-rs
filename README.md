@@ -1,21 +1,29 @@
 # lbry-rs
-a Rust API Wrapper for lbrynet
+
+A Rust API wrapper for lbrynet
 
 ## Installation
 
-### With cargo
+### From crates
 
-It's not a published cargo yet, so in order to use it:
+1. Add the following line to your `Cargo.toml` dependencies
 
-1. Manually Clone the Repository
+```toml
+lbry-rs = "0.0.1"
+```
+
+### From source
+
+1. Clone the repository
 
 ```bash
 $ git clone https://github.com/zxawry/lbry-rs
 ```
 
-2. Add the following line to your Cargo.toml dependencies
+2. Add the following line to your `Cargo.toml` dependencies
+
 ```toml
-lbry-rs = {path = "/{path-to-where-you-cloned-the-repo}"}
+lbry-rs = {path = "{path-to-where-you-cloned-the-repo}"}
 ```
 
 ## Usage
@@ -35,16 +43,21 @@ fn main() {
     //make requests by providing the method and params with cURL command-line syntax
     //params must be of the type serde_json::Value so use json! macro for conversion
     let result0: Value = lbry.call("status", json!({}));
-    let result1: Value = lbry.call("resolve", json!({"uri":"lbrytv"}));
-    let result2: Value = lbry.call("resolve_name", json!({"name":"lbrytv","force":true}));
+    let result1: Value = lbry.call("resolve", json!({"urls":"lbrytv"}));
         
     println!("{}", result0);
     println!("{}", result1);
-    println!("{}", result2);
 }
 ```
 
-Note that `lbrynet` must be up and running, to use the API.
+Note that `lbrynet` must be up and running, to use this API wrapper.
+
+## Links
+
+LBRY project: https://github.com/lbryio
+LBRY official website: https://lbry.com
+LBRYnet API reference: https://lbry.tech/api/sdk
 
 ## License
+
 MIT License
