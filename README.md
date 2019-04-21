@@ -54,9 +54,9 @@ Note that `lbrynet` must be up and running, to use this API wrapper.
 
 ## Links
 
-LBRY project: https://github.com/lbryio
-LBRY official website: https://lbry.com
-LBRYnet API reference: https://lbry.tech/api/sdk
+* LBRY project: https://github.com/lbryio
+* LBRY official website: https://lbry.com
+* LBRYnet API reference: https://lbry.tech/api/sdk
 
 ## License
 
