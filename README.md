@@ -23,7 +23,7 @@ $ git clone https://github.com/zxawry/lbry-rs
 2. Add the following line to your `Cargo.toml` dependencies
 
 ```toml
-lbry-rs = {path = "{path-to-where-you-cloned-the-repo}"}
+lbry-rs = {path = "{path-to-where-you-cloned-the-repository}"}
 ```
 
 ## Usage
