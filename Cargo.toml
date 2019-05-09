@@ -9,7 +9,7 @@ homepage = "https://github.com/zxawry/lbry-rs"
 repository = "https://github.com/zxawry/lbry-rs"
 readme = "README.md"
 keywords = ["http", "json", "api", "lbry"]
-categories = ["network-porgramming"]
+categories = ["network-programming"]
 license = "MIT"
 
 [dependencies]
